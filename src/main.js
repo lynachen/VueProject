@@ -8,6 +8,8 @@ import api from './api'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 import './assets/sass/common.scss'
+import Axios from 'axios'
+Vue.prototype.$axios = Axios;  //在Vue的原型上添加$axios方法
 
 Vue.prototype.$api = api
 Vue.config.productionTip = false
